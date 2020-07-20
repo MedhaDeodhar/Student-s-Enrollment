@@ -8,7 +8,11 @@ const cors=require('cors');
 
     await storage.init({dir:'./data'});
 
+    // use server express
+
     const server=express();
+
+    // server to use cors
     server.use(cors());
     server.use(express.json());
     server.use(bodyParser.json());
